@@ -33,7 +33,19 @@ def fetch_rate(api_url, multiplier=1):
     except Exception as e:
         print(f"{red}Error fetching rate: {e}{reset}")
     return 0
-
+def print_big_text():
+     big_text = """
+╔═══╗╔════╗    ╔═══╗╔═══╗╔╗  ╔╗╔═══╗╔════╗╔═══╗
+╚╗╔╗║╚══╗ ║    ║╔═╗║║╔═╗║║╚╗╔╝║║╔═╗║║╔╗╔╗║║╔═╗║
+ ║║║║  ╔╝╔╝    ║║ ╚╝║╚═╝║╚╗╚╝╔╝║╚═╝║╚╝║║╚╝║║ ║║
+ ║║║║ ╔╝╔╝     ║║ ╔╗║╔╗╔╝ ╚╗╔╝ ║╔══╝  ║║  ║║ ║║
+╔╝╚╝║╔╝ ╚═╗    ║╚═╝║║║║╚╗  ║║  ║║    ╔╝╚╗ ║╚═╝║
+╚═══╝╚════╝    ╚═══╝╚╝╚═╝  ╚╝  ╚╝    ╚══╝ ╚═══╝
+                                               
+                                               
+                                              
+"""
+     print(f"{green} {big_text}")
 def eth_rate(amount):
     return fetch_rate("https://ethbook.guarda.co/api/v2/tickers/?currency=usd") * amount
 
@@ -56,7 +68,7 @@ def check_balance(api_url, address):
 
 # Main Execution
 clearNow()
-
+print_big_text()
 # Download BIP39 File if not exists
 bip39_file = "bip39.txt"
 # Read BIP39 Words

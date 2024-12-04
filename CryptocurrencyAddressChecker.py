@@ -43,7 +43,7 @@ def print_big_text():
 ╚═══╝╚════╝    ╚═══╝╚╝╚═╝  ╚╝  ╚╝    ╚══╝ ╚═══╝
                                                
                                                
-                                              
+                             
 """
      print(f"{green} {big_text}")
 def eth_rate(amount):
